@@ -32,7 +32,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans';
   color: #D6D6D6;
 }
 .h-100 {

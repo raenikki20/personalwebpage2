@@ -1,5 +1,5 @@
 <template>
-  <div id="Lesson1">
+  <div id="Lesson3">
     <b-container fluid>
       <b-row align-h="center" align-v="center">
         <b-col cols="12" class="title">
@@ -15,12 +15,12 @@
         <b-col cols="6" class="codeBox-wrapper">
           <div class="codeBox">
             <code>
-              import Lesson1 from '@/views/LearningVue/Lesson1'
+              import Lesson3 from '@/views/LearningVue/Lesson3'
 
               export default {
                 name: 'LearningVue'
                 components: {
-                  'Lesson1': Lesson1
+                  'Lesson3': Lesson3
                 },
               }
             </code>
@@ -33,12 +33,12 @@
 
 <script>
 export default {
-  name: 'Lesson1'
+  name: 'Lesson3'
 }
 </script>
 
 <style lang="less" scoped>
-#Lesson1 {
+#Lesson3 {
   padding: 0 20px;
 }
 .title, {
