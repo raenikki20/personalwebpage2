@@ -7,11 +7,11 @@
             <h1>NIKKI <span class="bold">RAE</span></h1>
           </div>
           <div class="right">
-            <i href="https://www.facebook.com/nikki.rae2" class="fa fa-facebook"></i>
-            <i href="https://www.snapchat.com/add/nikki.rae18" class="fa fa-snapchat"></i>
-            <i href="https://www.instagram.com/nikki_rae19/?hl=en" class="fa fa-instagram"></i>
-            <i href="https://www.linkedin.com/in/nikki-rae-96a42010a/" class="fa fa-linkedin"></i>
-            <i href="https://github.com/raenikki20" class="fa fa-github"></i>
+            <i href="https://www.facebook.com/nikki.rae2" class="fab fa-facebook"></i>
+            <i href="https://www.snapchat.com/add/nikki.rae18" class="fab fa-snapchat"></i>
+            <i href="https://www.instagram.com/nikki_rae19/?hl=en" class="fab fa-instagram"></i>
+            <i href="https://www.linkedin.com/in/nikki-rae-96a42010a/" class="fab fa-linkedin"></i>
+            <i href="https://github.com/raenikki20" class="fab fa-github"></i>
           </div>
         </b-col>
       </b-row>
@@ -46,16 +46,17 @@ export default {
   }
   .right {
     float: right;
+    padding-top: 5px;
   }
-  .fa {
-    font-size: 36px;
-    width: 40px;
+  .fab {
+    font-size: 24px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
     color: #D6D6D6;
     margin: 4px;
   }
-  .fa:hover::before {
+  .fab:hover::before {
     color: blue;
   }
 </style>

@@ -43,7 +43,9 @@ export default {
 }
 h1 {
   font-size: 36px;
-  height: 100%;
+}
+h1, h2, h3, h4, p {
   margin-bottom: 0px;
+  height: 100%;
 }
 </style>
