@@ -32,7 +32,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   color: #D6D6D6;
 }
 .h-100 {
@@ -46,6 +46,5 @@ h1 {
 }
 h1, h2, h3, h4, p {
   margin-bottom: 0px;
-  height: 100%;
 }
 </style>

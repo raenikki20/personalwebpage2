@@ -13,18 +13,7 @@
           </p>
         </b-col>
         <b-col cols="6" class="codeBox-wrapper">
-          <div class="codeBox">
-            <code>
-              import Lesson1 from '@/views/LearningVue/Lesson1'
-
-              export default {
-                name: 'LearningVue'
-                components: {
-                  'Lesson1': Lesson1
-                },
-              }
-            </code>
-          </div>
+          <CodeBlock></CodeBlock>
         </b-col>
       </b-row>
     </b-container>
@@ -32,8 +21,12 @@
 </template>
 
 <script>
+import CodeBlock from '@/views/LearningVue/CodeBlocks/Code'
 export default {
-  name: 'Lesson1'
+  name: 'Lesson1',
+  components: {
+    'CodeBlock': CodeBlock
+  }
 }
 </script>
 
@@ -53,15 +46,5 @@ export default {
 }
 .codeBox-wrapper {
    padding: 20px 0px;
-  .codeBox {
-    background-color: lightgrey;
-  }
-  code {
-    font-size: 14px;
-    display: block;
-    white-space: pre;
-    color: #8B8B8B;
-    font-weight: bold;
-  }
 }
 </style>

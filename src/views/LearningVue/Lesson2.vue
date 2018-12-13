@@ -11,24 +11,13 @@
           </p>
         </b-col>
         <b-container fluid>
-          <b-row align-h="center" align-v="center" class="columns">
+          <b-row align-h="center" class="columns">
             <b-col cols="4">
               <h4>First - conditional</h4>
               <p :class="{ red: !isActive }">Watch this text change color when you click the button</p>
               <b-button @click="isActive = !isActive">Change Color</b-button>
               <b-col cols="12" class="codeBox-wrapper">
-                <div class="codeBox">
-                  <code>
-                    import Lesson1 from '@/views/LearningVue/Lesson1'
-
-                    export default {
-                      name: 'LearningVue'
-                      components: {
-                        'Lesson1': Lesson1
-                      },
-                    }
-                  </code>
-                </div>
+                <CodeBlock1></CodeBlock1>
               </b-col>
             </b-col>
             <b-col cols="4">
@@ -36,36 +25,14 @@
               <p :class="[isActive2 ? blue : green]">Watch this text change color when you click the button</p>
               <b-button @click="isActive2 = !isActive2">Change Color</b-button>
               <b-col cols="12" class="codeBox-wrapper">
-                <div class="codeBox">
-                  <code>
-                    import Lesson1 from '@/views/LearningVue/Lesson1'
-
-                    export default {
-                      name: 'LearningVue'
-                      components: {
-                        'Lesson1': Lesson1
-                      },
-                    }
-                  </code>
-                </div>
+                <CodeBlock2></CodeBlock2>
               </b-col>
             </b-col>
             <b-col cols="4">
               <h4>Third - Inline Styles (object)</h4>
               <p :style="styleObject">This color is set from an object using the style attribute</p>
               <b-col cols="12" class="codeBox-wrapper">
-                <div class="codeBox">
-                  <code>
-                    import Lesson1 from '@/views/LearningVue/Lesson1'
-
-                    export default {
-                      name: 'LearningVue'
-                      components: {
-                        'Lesson1': Lesson1
-                      },
-                    }
-                  </code>
-                </div>
+                <CodeBlock3></CodeBlock3>
               </b-col>
             </b-col>
           </b-row>
@@ -76,6 +43,9 @@
 </template>
 
 <script>
+import CodeBlock1 from '@/views/LearningVue/CodeBlocks/Code1'
+import CodeBlock2 from '@/views/LearningVue/CodeBlocks/Code2'
+import CodeBlock3 from '@/views/LearningVue/CodeBlocks/Code3'
 export default {
   name: 'Lesson2',
   data () {
@@ -88,6 +58,11 @@ export default {
         color: 'purple'
       }
     }
+  },
+  components: {
+    'CodeBlock1': CodeBlock1,
+    'CodeBlock2': CodeBlock2,
+    'CodeBlock3': CodeBlock3
   }
 }
 </script>
@@ -95,6 +70,12 @@ export default {
 <style lang="less" scoped>
 #Lesson2 {
   padding: 0 20px;
+}
+h4 {
+  padding: 20px 0px;
+}
+p {
+  padding-bottom: 20px;
 }
 .title, {
   color: #8B8B8B;
@@ -113,17 +94,6 @@ export default {
 .codeBox-wrapper {
    padding: 20px 0px;
    text-align: left;
-  .codeBox {
-    background-color: lightgrey;
-  }
-  code {
-    margin-left: -125px;
-    font-size: 14px;
-    display: block;
-    white-space: pre;
-    color: #8B8B8B;
-    font-weight: bold;
-  }
 }
 .red {
   color: red;
