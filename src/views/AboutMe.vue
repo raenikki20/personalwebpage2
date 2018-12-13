@@ -1,9 +1,9 @@
 <template>
   <div id="AboutMe">
-    <b-container fluid>
-      <b-row align-h="center" align-v="center">
-        <b-col cols="12">
-          <h1>AboutMe</h1>
+    <b-container>
+      <b-row align-h="center">
+        <b-col cols="12" class="title">
+          <hr><h1>About Me</h1><hr>
         </b-col>
       </b-row>
     </b-container>

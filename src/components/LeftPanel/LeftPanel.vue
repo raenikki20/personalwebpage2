@@ -109,7 +109,7 @@ export default {
   .footer-text {
     text-align: center;
     color: #8B8B8B;
-    bottom: 0;
+    bottom: 20px;
     position: absolute;
   }
 </style>

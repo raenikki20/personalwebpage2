@@ -26,7 +26,6 @@
               removeWatermelon: function () {
                 var that = this
                 this.fruits.filter(function (fruit, index) {
-                  console.log(fruit)
                   if (fruit === 'Watermelon') {
                     that.fruits.splice(index, 1)
                   }
