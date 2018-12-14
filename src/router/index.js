@@ -11,7 +11,9 @@ import LearningVue from '@/views/LearningVue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  scrollBehavior () {
+    return { x: 0, y: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -43,5 +45,6 @@ export default new Router({
       name: 'Learning Vue',
       component: LearningVue
     }
-  ]
+  ],
+  mode: 'history'
 })
